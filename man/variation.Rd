@@ -2,7 +2,7 @@
 % Please edit documentation in R/variation.R
 \name{variation}
 \alias{variation}
-\title{Title}
+\title{Variation}
 \usage{
 variation(x, n, time, percent = F)
 }
@@ -16,11 +16,11 @@ variation(x, n, time, percent = F)
 \item{percent}{if true, the result is multiplied by 100}
 }
 \description{
-Title
+Variation
 }
 \examples{
 library(lubridate)
-x <- data.frame(date = as.Date(c('2000-01-01', '2000-02-01', '2000-03-01')), x = 1:3)
-variation(x$x, n = months(1), time =  x$date)
+x <- data.frame( date = seq(as.Date("1910/1/1"), as.Date("1999/1/1"), "years"), x = seq(1:90))
+variation(x$x, n = years(1), time =  x$date)
 
 }

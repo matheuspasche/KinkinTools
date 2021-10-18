@@ -22,8 +22,6 @@ variation <- function(x, n, time, percent = F) {
 
   out <- percent*((x / statar::tlag(x, n, time, default = NA)) - 1)
 
-
-  if (!is.na(default)) out[which(is.na(index))] <- default
   attributes(out) <- attributes(x)
   out
 
