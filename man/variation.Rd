@@ -16,7 +16,7 @@ variation(x, n, time, percent = F)
 \item{percent}{if true, the result is multiplied by 100}
 }
 \description{
-Variation
+Computes the simple variation against a lagged period.
 }
 \examples{
 library(lubridate)

@@ -1,5 +1,7 @@
 #' Variation
 #'
+#' @description Computes the simple variation against a lagged period.
+#'
 #' @param x input data set
 #' @param n a positive integer of length 1 or period given by lubridate package. See statar and lubridate packages
 #' @param time time variable
